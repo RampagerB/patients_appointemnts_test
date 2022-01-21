@@ -1,0 +1,199 @@
+.App {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #e5e5e5;
+  position: relative;
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.App::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+.LeftPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-right: 1px solid #cccccc;
+}
+
+.searchPanel {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #cccccc;
+}
+
+.searchArea {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5px;
+  background-color: #ffffff;
+  border: 1px solid #777777;
+}
+
+.searchPanel input {
+  flex: 1;
+  height: 28px;
+  line-height: 30px;
+  color: #777777;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+}
+
+.selectPanel {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #cccccc;
+}
+
+.selectPanel p {
+  color: #777777;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.selectPanel select {
+  align-self: stretch;
+  height: 30px;
+  line-height: 30px;
+  color: #777777;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px;
+}
+
+.Content {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: space-between;
+}
+
+.SectionPanel {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  overflow-y: scroll;
+  box-shadow: 0 0px 10px rgb(0 0 0 / 0.2);
+  margin-right: 20px;
+}
+
+.SectionPanel::-webkit-scrollbar {
+  display: none; /* Chrome Safari */
+}
+
+.SectionPanel {
+  scrollbar-width: none; /* firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.SectionHeader h4 {
+  margin-left: 10px;
+}
+
+.PendingItem {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 10px;
+  padding-bottom: 20px;
+  margin-top: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.PendingItemTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.PendingItemTitle h5 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.typeTag {
+  font-size: 12px;
+  padding: 3px;
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.PendingItem p {
+  color: #999999;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.PendingItem span {
+  color: #222222;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.SignedbyWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.Signedby {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Signedby span {
+  color: #222222;
+  font-size: 12px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.PendingItem img {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+}
+
+.DoneItemPerson {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.MouseOverBubble {
+  position: absolute;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.2);
+}
+
+.MouseOverBubbl h4 {
+  border-left: 3px solid #222222;
+  padding-left: 5px;
+}
